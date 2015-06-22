@@ -3,7 +3,12 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  var date = new Date();
+  res.send(date.now());
 });
 
-module.exports = router;
+router.get("/aaa",function(req,res,next){
+  res.send("index");
+});
+
+module.exports = router;//requireしたファイルではrouterオブジェクトが渡される。
