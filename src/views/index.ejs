@@ -3,13 +3,15 @@
   <body class="container">
 
 
-    <h1><%=title%></h1>
-    <p><%= body %></p>
-
-    <form method="post" action="/create" class="form-group">
-    <input type="text" class="form-control" name="name1">
-    <input type="submit" value="送信" class="btn btn-default">
+<h1>Hello World</h1>
+    <form method="post" action="/login" class="form-group">
+    <label>ユーザー名</label>
+      <input type="text" class="form-control" name="user">
+      <label>パスワード</label>
+      <input type="text" class="form-control" name="password">
+      <input type="submit" class="btn btn-primary pull-right" value="送信">
     </form>
+
 
 
 <% include common/_footer %>
